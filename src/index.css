@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2.5rem; 
+  margin-bottom: 20px; 
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px; 
+  margin: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 100%; 
+  box-sizing: border-box; 
+  overflow: hidden; 
+  word-wrap: break-word; 
+  white-space: normal; 
+}
+
+.todo-container {
+  width: 90%;
+  max-width: 600px; 
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+  margin-bottom: 20px; 
+}
+
+.todo-list {
+  max-height: 400px;
+  overflow-y: auto; 
+}
+
+.todo-item {
+  font-size: 1rem;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  box-sizing: border-box; 
+  max-width: 100%;
+  white-space: normal; 
+  display: flex; 
+  flex-wrap: wrap; 
+  align-items: center; 
+}
+
+.todo-item span {
+  flex: 1; 
+  margin-right: 10px; 
+}
+
+.todo-item button {
+  margin: 2px; 
+}
+
+
+.todo-item.important {
+  background-color: yellow;
+}
+
+
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2rem; 
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .todo-item {
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem; 
+  }
+
+  button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  input[type="text"] {
+    padding: 8px;
+    margin: 5px;
+  }
+
+  .todo-item {
+    font-size: 0.8rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem; 
+  }
+
+  button {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+  }
+
+  input[type="text"] {
+    padding: 6px;
+    margin: 5px;
+  }
+
+  .todo-item {
+    font-size: 0.7rem;
+  }
+}
